@@ -26,6 +26,14 @@ header {
   top: 30px;
 }
 
+footer {
+  position: absolute;
+  font-size: 56px;
+  left: 30px;
+  margin: 0;
+  bottom: 30px;
+}
+
 h2 + p {
   font-size: 50px;
   margin: 0;
