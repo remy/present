@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8 />
+<title>Just an example</title>
+<link rel="stylesheet" href="present.css" type="text/css" />
+<style>
+body {
+  background-size: 100% 100%;
+  font-family: courier;
+  font-weight: bold;
+  background: #212112;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#444), to(black));
+}
+
+pre {
+  font-size: 40px;
+  -moz-border: 5px solid #ccc;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #000;
+}
+
+pre > code {
+  letter-spacing: 0px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 20px 10px;
+  display: block;
+  width: 994px;
+  background: rgba(0,0,0,.8);
+}
+
+.slide {
+  color: #3F3F3F;
+  text-shadow: rgba(0, 0, 0, 0.199219) 0px 2px 5px;
+  font-family: 'Stone Sans ITC TT';
+}
+
+.slide {
+  margin: 50px;
+  background: #fff;
+}
+
+#foo ul {
+  list-style: none;
+  margin-left: 1em;
+}
+
+#foo .reveal {
+  visibility: visible; /* forcing to be visible */
+  opacity: 0.5;
+}
+
+#foo .reveal.current {
+  opacity: 1;
+  color: #000;
+}
+
+header, h1, h2, h3 {
+  font-family: chunkfive, 'Cooper Std', 'Stone Sans ITC TT', 'poplar std', serif;
+  color: #000;
+  text-shadow: rgba(0, 0, 0, 0.199219) 0px 2px 5px;
+}
+</style>
+<script src="present.js"></script>
+<script>
+present.resizeTo(window.innerWidth - 200, window.innerHeight - 200);
+</script>
+</head>
+<body class="scroll">
+<div class="slide">
+  <h1>present.js</h1>
+</div>
+<div class="slide">
+  <header>We're just a title, m'kay?</header>
+</div>
+
+<div class="slide">
+  <header>Yay iframes!</header>
+  <section class="halign">
+    <iframe height="740" width="980" src="http://forbind.net/" style="-webkit-transform: scale(0.8);"></iframe> 
+  </section>
+  
+</div>
+
+<div class="slide">
+  <h2>What's practical to actually use?</h2>
+  <p>Sorry paul - I pinched this slide content from you.</p>
+</div>
+
+
+<div class="slide">
+  <h1>using an h1</h1>
+</div>
+
+<div class="slide" id="evented">
+  <header>Normal reveal list</header>
+  <ul>
+    <li>one</li>
+    <li class="reveal fade">two</li>
+    <li class="reveal fade">three</li>
+  </ul>
+</div>
+
+<div class="slide" id="foo">
+  <header>Dimmed reveal list</header>
+  <ul class="reveal">
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+  </ul>
+</div>
+</body>
+</html>
