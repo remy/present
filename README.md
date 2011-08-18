@@ -4,6 +4,8 @@ A(nother) custom JavaScript presentation script. I wrote this inspired by [slide
 
 Also - this all my own code, nothing pinched - I swear guvna!
 
+Here's a simple example you can play with: [present.js demo](http://jsbin.com/oxohev/edit#html,live)
+
 # Features
 
 - Automatic sizing to browser window
